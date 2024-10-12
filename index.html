@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head style="input:focus,textarea:focus {
+    outline: none;
+    box-shadow: none;
+}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .donut {
+            position: absolute;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body class="font-nunito overflow-x-hidden">
+
+    <!-- Navbar -->
+    <div class="fixed w-full h-[80px] flex justify-between items-center px-4 text-black drop-shadow-lg font-medium backdrop-sepia-0 bg-white/30 backdrop-blur-md z-10 md:bg-white/50">
+        <div>
+            <h1 class="mx-10 font-poppins">PORTOFOLIO</h1>
+        </div>
+        <ul class="flex mr-14 md:opacity-100">
+            <li class="cursor-pointer">
+                <a href="#home" class="smooth-scroll">Home</a>
+            </li>
+            <li class="cursor-pointer ml-6">
+                <a href="#about" class="smooth-scroll">About</a>
+            </li>
+            <li class="cursor-pointer ml-6">
+                <a href="#service" class="smooth-scroll">Service</a>
+            </li>
+            <li class="cursor-pointer ml-6">
+                <a href="#project" class="smooth-scroll">Project</a>
+            </li>
+            <li class="cursor-pointer ml-6">
+                <a href="#contact" class="smooth-scroll">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Home Section -->
+    <div class="judul select-none relative" id="home">
+      <div class="lg:absolute lg:top-20 lg:left-10 lg:opacity-100 sm:absolute sm:left-36 sm:top-5 z-[1]" data-aos="fade-down">
+        <!-- Foto utama dengan z-index lebih tinggi -->
+        <img src="foto.png" alt="" class="drop-shadow-xl lg:opacity-100 w-[12.5vw] sm:w-[550px] z-[3]">
+        
+        <!-- Blob kedua dengan opacity lebih rendah dan z-index lebih rendah lagi -->
+    </div>
+    
+  </div>
+  
+  
+
+
+
+        <!-- Donuts -->
+        <div id="donut-container" data-aos="zoom-in"></div>
+
+        <!-- Main Content -->
+        <div class="homes flex justify-center items-center h-screen lg:ml-96 relative z-[2]" data-aos="fade-left">
+            <div class="grid md:place-items-start text-center sm:text-center sm:mt-[300px] lg:mt-0">
+                <h1 class="text-4xl font-extrabold tracking-wide font-nunito">HELLO I'M<br /></h1>
+                <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+                    <span class="text-4xl font-extrabold tracking-wide font-nunito relative text-white">NANDA
+                        IKHWANUL</span>
+                </span>
+                <span class="text-lg tracking-normal font-[500]">I am a dedicated professional in my field</span>
+                <span class="text-lg tracking-normal font-[500] sm:mb-5">with extensive experience in various fields.</span>
+                <div class="flex gap-4">
+                    <button class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-44 pe-4 h-10 rounded-xl text-white text-base font-nunito font-medium tracking-wide relative hover:brightness-90 outline-none">
+                        
+                        <a href="cv.pdf">DOWNLOAD CV</a>
+                    </button>
+                    <button class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-32 h-10 rounded-xl text-white text-base font-nunito font-medium tracking-wide relative hover:brightness-90 outline-none">
+                        <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-sky-700 opacity-100 right-1 top-0"></span>
+                        <a href="#contact" class="smooth-scroll">CONTACT</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="flex items-center justify-center bg-white-full h-screen select-none">
+      <div class="grid justify-center items-center mx-10 md:grid-cols-3 grid-cols-1">
+        <span class="md:text-start sm:text-center font-poppins font-[500]" data-aos="fade-right">
+          <span class="flex justify-center font-bold drop-shadow-lg text-2xl">FROM BACK SIDE</span>
+          <p>I have experience and expertise in web development with a focus on Node.js, React.js, Tailwind, Bootstrap, and MongoDB. In backend development, I can build robust and scalable systems using Node.js, with capabilities such as server-side scripting, database management, and API integration.</p>
+        </span>
+        <span class="relative hidden md:block">
+          <img src="blobanimation.svg" alt="blob" class="w-96 absolute top-0 left-0" />
+          <img src="office.png" alt="office" class="w-64 mx-auto relative top-10 right-5 drop-shadow-xl" />
+        </span>
+        <span class="md:text-end sm:text-center font-poppins font-[500]" data-aos="fade-left">
+          <span class="flex justify-center font-bold drop-shadow-lg text-2xl">FROM FRONT SIDE</span>
+          <p>On the frontend side, I am skilled in using React.js to create interactive and responsive user interfaces. Apart from that, I am proficient in using Tailwind and Bootstrap as CSS frameworks, as well as experience managing databases using MongoDB.</p>
+        </span>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="service" class="flex justify-center items-center h-screen text-center select-none">
+      <div class="space-y-20">
+        <span class="text-4xl tracking-wide font-bold drop-shadow-lg" data-aos="zoom-in">MY SKILLS</span>
+        <div class="grid grid-cols-4 grid-rows-3 gap-3" data-aos="fade-up">
+          <span>
+            <img src="tailwind.svg" style="width: 100px;" alt="Tailwind" class="drop-shadow-lg" />
+          </span>
+          <span>
+            <img src="reactjs.png" style="width: 70px;" alt="ReactJS" class="drop-shadow-lg" />
+          </span>
+          <span>
+            <img src="node.png" style="width: 100px;" alt="Node.js" class="drop-shadow-lg" />
+          </span>
+          <span>
+            <img src="mongodb.png" style="width: 100px;" alt="MongoDB" class="drop-shadow-lg absolute" />
+          </span>
+          <span>
+            <img src="downloadPython.png" style="width: 100px;" alt="Python" class="drop-shadow-lg absolute " />
+          </span>
+          <span>
+            <img src="bootstraps.png" style="width: 100px;" alt="Bootstrap" class="drop-shadow-lg absolute " />
+          </span>
+          <span>
+            <img src="images.png" style="width: 70px;" alt="Other" class="drop-shadow-lg absolute " />
+          </span>
+          <span>
+            <img src="pngegg.png" style="width: 70px;" alt="Other" class="drop-shadow-lg absolute " />
+          </span>
+          <span>
+            <img src="pngwing.com.png" style="width: 100px;" alt="Other" class="drop-shadow-lg absolute " />
+          </span>
+          
+        </div>
+      </div>
+    </div>
+    
+    
+
+  <!-- Project Section -->
+  <div id="project" class="py-20">
+    <div class="grid md:flex justify-center items-center h-full md:px-20 gap-10">
+      <!-- Project Card 1 -->
+      <a href="https://github.com/nandaikhwanul/ProjectWeb" class="group block max-w-xs mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500" data-aos="fade-up" data-aos-delay="300">
+        <div class="flex items-center space-x-3">
+          <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24"></svg>
+          <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">UnramGRAD</h3>
+        </div>
+        <p class="text-slate-500 group-hover:text-white text-sm">Membuat project web tugas akhir berkelompok dengan HTML, CSS, JavaScript, dan PHP.</p>
+      </a>
+
+      <!-- Project Card 2 -->
+      <a href="#" class="group block max-w-xs mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500" data-aos="fade-up" data-aos-delay="500">
+        <div class="flex items-center space-x-3">
+          <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24"></svg>
+          <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">New project</h3>
+        </div>
+        <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+      </a>
+
+      <!-- Project Card 3 -->
+      <a href="#" class="group block max-w-xs mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500" data-aos="fade-up" data-aos-delay="700">
+        <div class="flex items-center space-x-3">
+          <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24"></svg>
+          <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">New project</h3>
+        </div>
+        <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+      </a>
+    </div>
+
+    <!-- View More Button -->
+    <div class="flex justify-center mt-20">
+      <a href="https://github.com/nandaikhwanul?tab=repositories" class="w-36 h-12 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-lg text-white font-poppins font-[500] tracking-wide drop-shadow-xl text-center  leading-10">VIEW MORE...</a>
+    </div>
+  </div>
+
+   <!-- Contact Section -->
+   <div class="h-screen flex justify-center items-center" id="contact">
+    <div class="px-20 relative">
+      <div class="icon bg-blue-600 text-white w-6 h-6 absolute flex items-center justify-center p-5" style="left: -40px;">
+        <i class="fas fa-phone-volume fa-fw text-2xl transform -rotate-45"></i>
+      </div>
+      <h3 class="text-2xl text-gray-900 font-semibold">Send me a message!</h3>
+      <p class="text-gray-600">If you're interested and need help for your company</p>
+      <div class="flex space-x-5 mt-3">
+        <input type="text" placeholder="Your Name" class="border p-2 w-1/2 focus:outline-none focus:ring focus:ring-sky-300" />
+        <input type="tel" placeholder="Your Number" class="border p-2 w-1/2 focus:outline-none focus:ring focus:ring-sky-300" />
+      </div>
+      <input type="email" placeholder="Your Email" class="border p-2 w-full mt-3 focus:outline-none focus:ring focus:ring-sky-300" />
+      <textarea cols="10" rows="3" placeholder="Tell us about your inquiry" class="border p-2 mt-3 w-full focus:outline-none focus:ring focus:ring-sky-300"></textarea>
+      <p class="font-bold text-sm mt-3">GDPR Agreement *</p>
+      <div class="flex items-baseline space-x-2 mt-2">
+        <input type="checkbox" class="inline-block accent-pink-500" />
+        <p class="text-gray-600 text-sm">I consent to having this website store my submitted information so they can respond to my inquiry.</p>
+      </div>
+      <button class="w-full mt-6 bg-blue-600 hover:bg-blue-500 text-white font-semibold p-3">Submit</button>
+    </div>
+  </div>
+
+   <!-- Footer Section -->
+   <footer class="w-full text-gray-700 bg-gray-100 body-font">
+    <div class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row">
+      <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+        <div class="mt-4">
+          <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+            <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-700">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                </path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/nanda_nadl/" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/nanda-ikhwanul-866a0430a/" class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                </path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">About</h2>
+          <nav class="mb-10 list-none">
+            <li class="mt-3">
+              <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Company</a>
+            </li>
+            <li class="mt-3">
+              <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Careers</a>
+            </li>
+            <li class="mt-3">
+              <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Blog</a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Support</h2>
+          <nav class="mb-10 list-none">
+            <li class="mt-3">
+              <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Contact Support</a>
+            </li>
+            <li class="mt-3">
+              <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Help Resources</a>
+            </li>
+            <li class="mt-3">
+              <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Updates Info</a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Platform</h2>
+          <nav class="mb-10 list-none">
+            <li class="mt-3">
+              <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Terms & Privacy</a>
+            </li>
+            <li class="mt-3">
+              <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Pricing</a>
+            </li>
+            <li class="mt-3">
+              <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">FAQ</a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact</h2>
+          <nav class="mb-10 list-none">
+            <li class="mt-3">
+              <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Send a Message</a>
+            </li>
+            <li class="mt-3">
+              <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
+            </li>
+            <li class="mt-3">
+              <a href="tel:+62895618165985" class="text-gray-500 cursor-pointer hover:text-gray-900 text-sm">+62 8956-1816-5985</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-300">
+      <div class="container px-5 py-4 mx-auto">
+        <p class="text-sm text-gray-700 capitalize xl:text-center">© 2023 All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+ 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script>
+        AOS.init({
+            offset: 100, 
+            duration: 1000, 
+        });
+
+        // Generate Donuts
+        const donutContainer = document.getElementById('donut-container');
+        const brightColors = ['#FF0000', '#00FF00', '#E966A0', '#FFFF00', '#00FFFF', '#30A2FF', '#00C4FF', '#EEEDED', '#A076F9', '#08D9D6'];
+
+        for (let i = 0; i < 10; i++) {
+            const size = Math.floor(Math.random() * 150) + 50;
+            const positionX = Math.floor(Math.random() * 1200);
+            const positionY = Math.floor(Math.random() * 500);
+            const color = brightColors[Math.floor(Math.random() * brightColors.length)];
+
+            const donut = document.createElement('div');
+            donut.classList.add('donut', 'drop-shadow-2xl');
+            donut.style.width = `${size}px`;
+            donut.style.height = `${size}px`;
+            donut.style.top = `${positionY}px`;
+            donut.style.left = `${positionX}px`;
+            donut.style.backgroundColor = color;
+            donut.style.mixBlendMode = 'difference';
+
+            donutContainer.appendChild(donut);
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
