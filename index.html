@@ -14,10 +14,6 @@
         * {
             font-family: 'Poppins', sans-serif;
         }
-        .donut {
-            position: absolute;
-            border-radius: 50%;
-        }
     </style>
 <html>
 <head>
@@ -168,7 +164,7 @@
             <p class="text-center mt-4 font-medium text-gray-700">Bootstrap</p>
           </div>
           <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
-            <img src="images.png" class="w-20 h-20 mx-auto object-contain" alt="Other" />
+            <i class="fab fa-html5 text-6xl mx-auto block text-orange-500"></i>
             <p class="text-center mt-4 font-medium text-gray-700">HTML5</p>
           </div>
           <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
@@ -176,8 +172,12 @@
             <p class="text-center mt-4 font-medium text-gray-700">CSS3</p>
           </div>
           <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
-            <img src="pngwing.com.png" class="w-20 h-20 mx-auto object-contain" alt="Other" />
+            <i class="fab fa-js text-6xl mx-auto block text-yellow-500"></i>
             <p class="text-center mt-4 font-medium text-gray-700">JavaScript</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+            <img src="pngwing.com.png" class="w-20 h-20 mx-auto object-contain" alt="Figma" />
+            <p class="text-center mt-4 font-medium text-gray-700">Figma</p>
           </div>
         </div>
       </div>
@@ -391,24 +391,6 @@
             offset: 100, 
             duration: 1000, 
         });
-        // Generate Donuts
-        const donutContainer = document.getElementById('donut-container');
-        const brightColors = ['#FF0000', '#00FF00', '#E966A0', '#FFFF00', '#00FFFF', '#30A2FF', '#00C4FF', '#EEEDED', '#A076F9', '#08D9D6'];
-        for (let i = 0; i < 10; i++) {
-            const size = Math.floor(Math.random() * 150) + 50;
-            const positionX = Math.floor(Math.random() * 1200);
-            const positionY = Math.floor(Math.random() * 500);
-            const color = brightColors[Math.floor(Math.random() * brightColors.length)];
-            const donut = document.createElement('div');
-            donut.classList.add('donut', 'drop-shadow-2xl');
-            donut.style.width = `${size}px`;
-            donut.style.height = `${size}px`;
-            donut.style.top = `${positionY}px`;
-            donut.style.left = `${positionX}px`;
-            donut.style.backgroundColor = color;
-            donut.style.mixBlendMode = 'difference';
-            donutContainer.appendChild(donut);
-        }
         // Smooth scroll for navigation links
         document.querySelectorAll('.smooth-scroll').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
